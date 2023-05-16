@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200&family=Fredoka&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+  font-family: 'Fredoka', sans-serif;
+}
+/* Navbar 2 */
+
+nav .navbar-nav li a {
+  color: rgb(70, 78, 85) !important;
+}
+
+/* About US PAGE */
+/* Contact US form */
+textarea.form-control, textarea{
+    background: #f1fffead;
+}
+input.form-control,
+textarea {
+  background: #f1fffead;
+}
+.contact-alignment {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container-fluid h2{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Frequently Asked Questions */
+/* --------------------------------------------------------------*/ 
+
+
+.accordion__heading {
+  margin-bottom: 1rem;
+  padding: 0 1.4rem;
+}
+
+.accordion__item:not(:last-child) {
+  border-bottom: 1px solid rgb(73, 146, 175);
+}
+
+.accordion__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  background-color: #e7e5d900;
+  border: none;
+  outline: none;
+  /* color: var(--color-text); */
+  font-size: 1.2rem;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.accordion__btn:hover {
+  background: #a1bdbb;
+}
+
+.accordion__item--active .accordion__btn {
+  color: var(--color-purple);
+  border-bottom: 2px solid var(--color-purple);
+  background: #a1bdbb;
+}
+
+.fa-lightbulb {
+  padding-right: 1rem;
+}
+.accordion__icon {
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+  opacity: 0.9;
+}
+.accordion__item--active .accordion__icon {
+  transform: rotate(135deg);
+}
+
+.accordion__content {
+  font-weight: 300;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  color: var(--color-text-muted);
+  transform: translateX(16px);
+  transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
+}
+.accordion__content p {
+  padding: 1rem 1.8rem;
+}
+
+.accordion__item--active .accordion__content {
+  opacity: 1;
+  transform: translateX(0px);
+  max-height: 100vh;
+}
+
+/* Footer */
+
+.footer {
+  background-color: antiquewhite;
+  margin-bottom: 0;
+}
+.footer-links a{
+  color: black;
+}
